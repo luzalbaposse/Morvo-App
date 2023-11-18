@@ -11,12 +11,12 @@ import {
   } from "@/components/ui/accordion"
 
 
-export default function Journalist() {
+export default function Media() {
   return (
     <>
     <div className="flex-col justify-start items-start gap-[17px] inline-flex">
-    <div className="text-center text-neutral-700 text-[90px] font-medium font-poppins">HEY JOURNALIST</div>
-    <div className="text-red-500 text-2xl font-normal font-poppins">Let's prove that you are a real journalist!</div>
+    <div className="text-center text-neutral-700 text-[90px] font-medium font-poppins">HEY THERE</div>
+    <div className="text-red-500 text-2xl font-normal font-poppins">Let's prove that you are a Media Institution!</div>
     <Accordion type="single" collapsible className="w-full">
     <AccordionItem value="item-1">
         <AccordionTrigger className="cursor-pointer text-black p-5">Connect your public wallet</AccordionTrigger>
@@ -66,7 +66,7 @@ export default function Journalist() {
       </AccordionItem>
     </Accordion>
     </div>
-    <Button text={"Go to Morvo"} redirectUrl={"/articles"} ></Button>
+    <Button text={"Go to Morvo"} redirectUrl={"/media-dashboard"} ></Button>
     </>
   );
 }
