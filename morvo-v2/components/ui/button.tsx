@@ -1,3 +1,4 @@
+'use client'
 import * as React from "react"
 import { Slot } from "@radix-ui/react-slot"
 import { cva, type VariantProps } from "class-variance-authority"
@@ -53,4 +54,13 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 )
 Button.displayName = "Button"
 
-export { Button, buttonVariants }
+
+const monvoClassProps = "bg-[#E5374C] hover:bg-[#FF5368] text-white py-2 px-4 rounded my-5 w-[300px] h-[50px] text-center align-middle";
+
+const MonvoButton = ({ text, ...props }) => (
+    <Button {...props}  className={monvoClassProps}>
+        { text }
+    </Button>
+)
+
+export { Button, buttonVariants, MonvoButton }
