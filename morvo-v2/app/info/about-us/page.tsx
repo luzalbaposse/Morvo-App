@@ -14,7 +14,7 @@ export default function Team() {
     <div className="w-[1141px] h-[259px] relative">
         <div className="w-[200px] h-[259px] left-[236px] top-0 absolute">
             <div className="left-[2px] top-[214px] absolute text-center text-red-500 text-3xl font-normal font-poppins">Camellia Yang</div>
-            <img className="w-[200px] h-[200px] left-0 top-0 absolute" src="https://via.placeholder.com/200x200" />
+            <img className="w-[200px] h-[200px] left-0 top-0 absolute" src="/team/camellia.png" />
         </div>
         <div className="w-[200px] h-[258px] left-[471px] top-[1px] absolute">
             <div className="left-[5px] top-[213px] absolute text-center text-red-500 text-3xl font-normal font-poppins">Luz Alba Posse</div>
