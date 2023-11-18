@@ -1,6 +1,3 @@
-import Image from 'next/image';
-import Head from 'next/head';
-import Navbar4App from '@/components/navbar4app';
 import Button from '@/components/button';
 export default function ZKverification() {
   return (

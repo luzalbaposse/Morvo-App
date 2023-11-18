@@ -34,7 +34,7 @@ enum PublicationMetadataMainFocusType {
 /**
  * This is a shared components for listing articles
  */
-export function BaseArticles({ articles }: { articles: Post[]; }) {
+function BaseArticles({ articles }: { articles: Post[]; }) {
     if (!articles) {
         return (
             <Loader2 className="h-12 w-12 animate-spin" />
@@ -58,7 +58,7 @@ export function BaseArticles({ articles }: { articles: Post[]; }) {
 /**
  * This will be list of articles that is owned by Journalist user
  */
-export function JournalistArticles() {
+function JournalistArticles() {
 
   const { data: articles } = useExplorePublications({
     limit: LimitType.TwentyFive,
@@ -77,7 +77,7 @@ export function JournalistArticles() {
 /**
  * This will be list of articles that is followed / liked / paid by current Media user
  */
-export function MediaArticles() {
+function MediaArticles() {
 
     const { data: articles } = useExplorePublications({
       limit: LimitType.TwentyFive,
