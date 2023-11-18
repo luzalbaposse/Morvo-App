@@ -16,7 +16,7 @@ const projectId = process.env.NEXT_PUBLIC_WC_ID ?? 'placeholder-project-id'
 
 
 const { publicClient, chains } = configureChains(
-    [polygonMumbai, polygon],
+    [polygonMumbai],
     [walletConnectProvider({ projectId }), publicProvider()]
 );
 

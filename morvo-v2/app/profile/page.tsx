@@ -5,6 +5,7 @@ import { useProfiles } from '@lens-protocol/react-web'
 
 export default function ProfileWrapper() {
   const { address } = useAccount()
+  
   if (!address) return null
 
   return (
@@ -21,12 +22,13 @@ function Profile({ address }) {
     },
   })
 
-  if (!data || !data.length) return null
+  if (!data?.length) return null
   const profile = data[data.length - 1]
   if (!profile) return null
 
+  console.log('profile', profile)
+
   return (
-    <main className="px-10 py-14">
       <div>
         <a
           rel='no-opener'
@@ -48,12 +50,11 @@ function Profile({ address }) {
                 {profile?.metadata?.displayName}
               </p>
               <p className='text-muted-foreground font-medium'>
-                {profile?.handle?.localName}.{profile?.handle?.namespace}
+                {profile?.handle?.localName}
               </p>
             </div>
           </div>
         </a>
      </div>
-    </main>
   )
 }
