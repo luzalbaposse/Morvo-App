@@ -1,27 +1,21 @@
-## ShadCN + Lens Protocol example app
+## Prerequisites
 
-A quick prototype combining Lens Protocol + ShadCN UI
+#### Node.js v18
 
-I will continue iterating on and improving this in the future.
+You can install using [nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-## Getting started
-
-1. Clone repo
-
-```sh
-git clone git@github.com:dabit3/lens-shadcn.git
+```bash
+# this is for installing v18.x.x
+nvm install lts/hydrogen
+# this is for telling it to use that specific version 
+nvm use lts/hydrogen
+# this is for making it default, so that the version will not be changed after re-login or reboot
+nvm alias default lts/hydrogen
 ```
 
-2. Install dependencies
+#### Project id from WalletConnect
+Create an "app" project in WalletConnect, the ID will be used in next step.
 
-```sh
-npm install # or yarn, etc..
-```
-
-3. Create WalletConnect ID, then copy the contents of `.example.env.local` to a new file called `.env.local` with the WalletConnect ID
-
-4. Run the app
-
-```sh
-npm run dev
-```
+#### .env.local
+This file should include the WalletConnect project ID like:
+`NEXT_PUBLIC_WC_ID=a83c3241b3fe`
