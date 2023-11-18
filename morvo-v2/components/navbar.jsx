@@ -13,10 +13,10 @@ const Navbar = () => {
         <Link href="/" className={`text-center text-red-500 text-xl ${router.pathname === '/' ? 'font-bold' : 'font-light'} font-poppins tracking-tighter`}>
           home
         </Link>
-        <Link href="/about-us" className={`text-center text-red-500 text-xl ${router.pathname === '/info/about-us' ? 'font-bold' : 'font-light'} font-poppins tracking-tighter`}>
+        <Link href="/info/about-us" className={`text-center text-red-500 text-xl ${router.pathname === '/info/about-us' ? 'font-bold' : 'font-light'} font-poppins tracking-tighter`}>
           about us
         </Link>
-        <Link href="/the-story-behind" className={`text-center text-red-500 text-xl ${router.pathname === '/info/the-story-behind' ? 'font-bold' : 'font-light'} font-poppins tracking-tighter`}>
+        <Link href="/info/the-story-behind" className={`text-center text-red-500 text-xl ${router.pathname === '/info/the-story-behind' ? 'font-bold' : 'font-light'} font-poppins tracking-tighter`}>
           the story behind
         </Link>
       </div>

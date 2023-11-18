@@ -10,7 +10,7 @@ export default function Team() {
       </div>
     <div className="flex-col justify-start items-start gap-[17px] inline-flex">
     <div className="text-center text-neutral-700 text-[150px] font-medium font-poppins">ABOUT US</div>
-    <div className="text-red-500 text-3xl font-normal font-poppins">Lorem ipsum short  story...<br/>Project made on ETH Global Istanbul</div>
+    <div className="text-red-500 text-3xl font-normal font-poppins">Some of us are Talent Protocol Scholars, all of us are builders<br/>Project made on ETH Global Istanbul by</div>
     <div className="w-[1141px] h-[259px] relative">
         <div className="w-[200px] h-[259px] left-[236px] top-0 absolute">
             <div className="left-[2px] top-[214px] absolute text-center text-red-500 text-3xl font-normal font-poppins">Camellia Yang</div>
