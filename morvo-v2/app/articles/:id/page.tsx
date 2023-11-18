@@ -13,7 +13,7 @@ import {
 /**
  * This will be list of articles that is followed / liked / paid by current Media user
  */
-export function ArticleDetails() {
+export default function ArticleDetails() {
 
     const { data: article } = useExplorePublications({ // TODO: fetch single one wiht details
       limit: LimitType.TwentyFive,
