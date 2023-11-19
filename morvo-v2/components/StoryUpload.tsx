@@ -1,17 +1,27 @@
-// components/StoryForm.tsx
-'use client'
-
 import React, { useState } from 'react';
 
 const StoryForm: React.FC = () => {
   const [title, setTitle] = useState<string>('');
   const [story, setStory] = useState<string>('');
+  const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log('Title:', title);
-    console.log('Story:', story);
+
+    // Show the loading modal
+    setIsLoading(true);
+
+    // Simulate a loading delay
+    setTimeout(() => {
+      // Hide the loading modal after 5 seconds
+      setIsLoading(false);
+
+      // Handle form submission logic here
+      console.log('Title:', title);
+      console.log('Story:', story);
+
+      window.location.replace('/profile_journalist');
+    }, 5000);
   };
 
   return (
@@ -55,6 +65,12 @@ const StoryForm: React.FC = () => {
           Publish
         </button>
       </form>
+      {/* Loading Modal */}
+      {isLoading && (
+        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-50">
+          <div className="text-white">Loading...</div>
+        </div>
+      )}
     </div>
   );
 };

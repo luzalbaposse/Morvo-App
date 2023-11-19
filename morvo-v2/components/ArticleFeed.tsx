@@ -2,9 +2,9 @@
 
 import React from 'react';
 import ArticlePlaceholder from './ArticlePlaceholder';
+import Button from '@/components/button';
 
 const ArticleFeed: React.FC = () => {
-  // Simulating an array of articles
   const articles: any[] = Array.from({ length: 5 }, (_, index) => ({
     id: index,
     title: `Defending the Fourth Estate: The Unyielding Mission of Periodistas Sin Fronteras ${index + 1}`,
@@ -21,8 +21,8 @@ const ArticleFeed: React.FC = () => {
             <div className="max-w-md mx-auto my-4 p-6 bg-white rounded-md shadow-md">
               <h2 className="text-xl font-semibold mb-4 text-black">{article.title}</h2>
               <p className="text-gray-600 mb-4">{article.content}</p>
-              <p className="text-gray-400 text-sm">{article.date}</p>
-              <div className="bg-[#E5374C] text-white rounded-5px"> Claim with Lens</div>
+              <p className="text-gray-400 text-sm mb-4">{article.date}</p>
+             <Button text="Claim with Lens" redirectUrl={"/"} ></Button>
             </div>
           ) : (
             // Render placeholder

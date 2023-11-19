@@ -146,7 +146,7 @@ export default function Journalist() {
     </AccordionItem>
     </Accordion>
     </div>
-    <Button text={"Go to Morvo"} redirectUrl={"/articles"} ></Button>
+    <Button text={"Go to Morvo"} redirectUrl={"/hardcoded-version"} ></Button>
     </>
   );
 }

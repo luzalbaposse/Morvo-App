@@ -7,16 +7,16 @@ import JournalistProfile from '@/components/JournalistProfile';
 
 export default function Home() {
   const journalist = {
-    name: 'Simon',
+    name: '0xPLEH.lens',
     bio: 'Covering at Gaza',
-    imageUrl: '/team/simon.png',
+    imageUrl: '/avatar.png',
   };
 
   return (
     <>
  <div className="min-h-screen w-full items-left justify-center bg-[#FDF6EE]">        
  <div>
-          <h1 className="text-3xl font-semibold text-black font-poppins">Journalist Profile</h1>
+        <h1 className="text-3xl font-semibold text-black font-poppins">Journalist Profile</h1>
           <JournalistProfile {...journalist} />
         </div>
         <div>
