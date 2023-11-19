@@ -25,6 +25,7 @@
     "@web3-storage/w3up-client": "^11.0.1",
     "@web3modal/wagmi": "^3.2.1",
     "autoprefixer": "10.4.15",
+    "axios": "^1.6.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "eslint": "8.47.0",

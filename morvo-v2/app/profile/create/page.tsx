@@ -19,16 +19,6 @@ export default function ProfileCreationPage() {
     const { address, isConnected } = useAccount()
     const [handle, setHandle] = useState('');
     
-
-    useEffect(() => {
-        lensClient.authentication.isAuthenticated().then(value => {
-            console.log(`--> isAuthenticated ${value}`);
-        })
-        .catch(err => {
-            console.error(`--> isAuthenticated ${err.message}`, err.stack);
-        })
-    }, [])
-
     const createProfile = useCallback(() => {
         
         lensClient.wallet.createProfile({
