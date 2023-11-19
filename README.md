@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <img src="./media/MORVO.png" alt="morvo" width="500">
+  <img src="./MORVO.png" alt="morvo" width="500">
 </h1>
 
 <h4 align="center" style="font-size:20px">Identity abstraction for journalists </h4>
@@ -22,7 +22,7 @@ https://ethglobal.com/showcase/morvo-u0hph" target="_blank">Website</a>
 
 <h1 align="center">
 <a href="https://morvo.vercel.app/">
-  <img src="./media/app.jpeg" alt="morvo" width="900">
+  <img src="./app.jpeg" alt="morvo" width="900">
 </a>
 </h1>
 
@@ -121,5 +121,5 @@ $ cd ../morvo-v2 & npm install & npm run dev
 ## The Team
 
 <h1 align="center">
-    <img  src="./media/team.png" alt="morvo" width="900">
+    <img  src="./team.png" alt="morvo" width="900">
 </h1>
