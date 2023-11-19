@@ -21,6 +21,7 @@ import JournalistABI from '@/contracts/Journalist.json';
 
 
 export default function Journalist() {
+  const [isNFTMinted, setIsNFTMinted] = useState(false);
   const mintNFT = async (address) => {
     try {
       const provider = new ethers.providers.JsonRpcProvider('https://rpc-mumbai.maticvigil.com');
@@ -33,6 +34,9 @@ export default function Journalist() {
       await transaction.wait();
   
       console.log('NFT minted successfully!');
+      setIsNFTMinted(true);
+
+      
     } catch (error) {
       console.error('Error minting NFT:', error);
     }
@@ -78,6 +82,7 @@ export default function Journalist() {
         await transaction.wait();
   
         console.log('NFT minted successfully!');
+        setIsNFTMinted(true);
         toast.success('You have your credential! Go to Morvo :)');
 
       } else {
@@ -146,7 +151,11 @@ export default function Journalist() {
     </AccordionItem>
     </Accordion>
     </div>
-    <Button text={"Go to Morvo"} redirectUrl={"/hardcoded-version"} ></Button>
+    {isNFTMinted ? (
+        <Button text={"Go to Morvo"} redirectUrl={"/feed-articles"} />
+      ) : (
+        <p className="text-red-500">Complete the NFT minting process to unlock access to Morvo</p>
+      )}
     </>
   );
 }
