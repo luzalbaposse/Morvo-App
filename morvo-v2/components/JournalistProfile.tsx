@@ -10,8 +10,8 @@ interface JournalistProfileProps {
 
 const JournalistProfile: React.FC<JournalistProfileProps> = ({ name, bio, imageUrl }) => {
   return (
-    <div className="max-w-md mx-auto p-6 bg-white rounded-md shadow-md">
-      <div className="mb-4">
+    <div className="max-w-[200px] max-h-[200px] rounded-md shadow-md">
+      <div className="mb-4 mt-4">
         <img src={imageUrl} alt={name} className="w-full h-48 object-cover rounded-md" />
       </div>
       <div>

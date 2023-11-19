@@ -17,7 +17,7 @@ export default function Layout({ children }) {
           <Web3ModalProvider>
             <LensProvider>
             <Navbar />
-            <main className="flex min-h-screen max-h-screen flex-col items-center justify-center p-24 bg-cover bg-center bg-[#FDF6EE] bg-[url('/bg-2.png')]" > 
+            <main className="flex min-h-screen flex-col items-center justify-center p-24 bg-cover bg-center bg-[#FDF6EE] bg-[url('/bg-2.png')]" > 
               {children}
             </main>  
             </LensProvider>

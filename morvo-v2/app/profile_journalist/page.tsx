@@ -19,8 +19,8 @@ export default function Home() {
         <h1 className="text-3xl font-semibold text-black font-poppins">Journalist Profile</h1>
           <JournalistProfile {...journalist} />
         </div>
-        <div>
-          <h1 className="text-3xl font-semibold mb-8">Latest Articles</h1>
+        <div className="mt-20">
+          <h1 className="text-3xl font-semibold mb-8 text-black">Latest Articles</h1>
           <ArticleFeed />
         </div>
       </div>
