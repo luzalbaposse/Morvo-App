@@ -11,7 +11,6 @@ export default function Home() {
       </div>
       <div className="mt-20 p-6">
       <h1 className="text-4xl font-semibold mb-8 font-poppins text-black">Hey mate! Lets free the press</h1>
-
         <h1 className="text-3xl font-semibold mb-8 font-poppins text-black">Your latests articles...</h1>
         <Button text="Write an article" redirectUrl={"/submition-article"}></Button>
         <ArticleFeed />
