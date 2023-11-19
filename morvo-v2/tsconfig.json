@@ -24,6 +24,8 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "scripts/**/*",
+  "morvo-v2/app/utils/merkleTree.ts",
+  "morvo-v2/app/utils/merkle.json"],
   "exclude": ["node_modules"]
 }
