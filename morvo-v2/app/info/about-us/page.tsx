@@ -18,20 +18,20 @@ export default function Team() {
         </div>
         <div className="w-[200px] h-[258px] left-[471px] top-[1px] absolute">
             <div className="left-[5px] top-[213px] absolute text-center text-red-500 text-3xl font-normal font-poppins">Luz Alba Posse</div>
-            <img className="w-[200px] h-[200px] left-0 top-0 absolute" src="https://via.placeholder.com/200x200" />
+            <img className="w-[200px] h-[200px] left-0 top-0 absolute" src="/team/luz.png" />
         </div>
         <div className="w-[200px] h-[259px] left-[706px] top-0 absolute">
             <div className="left-[18px] top-[214px] absolute text-center text-red-500 text-3xl font-normal font-poppins">Santi Nihany</div>
-            <img className="w-[200px] h-[200px] left-0 top-0 absolute" src="https://via.placeholder.com/200x200" />
+            <img className="w-[200px] h-[200px] left-0 top-0 absolute" src="/team/santi.png" />
         </div>
         <div className="w-[200px] h-[258px] left-[941px] top-[1px] absolute">
             <div className="left-[25px] top-[213px] absolute text-center text-red-500 text-3xl font-normal font-poppins">Ali Can Sag</div>
-            <img className="w-[200px] h-[200px] left-0 top-0 absolute" src="https://via.placeholder.com/200x200" />
+            <img className="w-[200px] h-[200px] left-0 top-0 absolute" src="/team/ali.png" />
         </div>
         <div className="w-[201px] h-[259px] left-0 top-0 absolute">
             <div className="left-[9px] top-[214px] absolute text-center text-red-500 text-3xl font-normal font-poppins">Simon Puebla</div>
             <div className="w-[200px] h-[200px] left-[1px] top-0 absolute bg-red-500" />
-            <img className="w-[201px] h-[200px] left-0 top-0 absolute" src="https://via.placeholder.com/201x200" />
+            <img className="w-[201px] h-[200px] left-0 top-0 absolute" src="/team/simon.png" />
         </div>
     </div>
 </div>
